@@ -13,8 +13,10 @@
     <script src="./main.js" defer></script>
   </head>
   <body>
-    <div id="app" v-for="(mail, index) in randomMail">
-      <div>{{ randomMail[index] }}</div>
+    <div id="app">
+      <div v-for="mail in mails">
+        <div>{{ mail }}</div>
+      </div>
     </div>
   </body>
 </html>
